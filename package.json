@@ -1,11 +1,21 @@
 {
   "name": "vadmark-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vadmark user interface for React.",
+  "keywords": [
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VADMARK223/vadmark-ui"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Markitanov Vadim",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
