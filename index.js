@@ -2,9 +2,7 @@
  * @author Markitanov Vadim
  * @since 20.01.2023
  */
-const getOne = () => {
-    return 1;
-}
+const nativeNull = () => null;
 
 /**
  * Function get sum numbers
@@ -17,6 +15,6 @@ const getSum = (a, b) => {
 }
 
 module.exports = {
-    get_one: getOne(),
-    getSum
+    getSum,
+    nativeNull
 }

@@ -3,14 +3,26 @@
  * @since 20.01.2023
  */
 
-const index = require('../index');
+const {getSum, nativeNull} = require('../index');
 
-const sum = index.getSum;
+describe('Sum function:', () => {
+    test('1 + 2 = 3', () => {
+        expect(getSum(1, 2)).toBe(3);
+        expect(getSum(1, 2)).toEqual(3);
+    });
 
-test('Adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+    test('0.1 + 0.2 = 0.3', () => {
+        expect(getSum(0.1, 0.2)).toBeCloseTo(0.3);
+    })
 });
 
-test('Adds1 2 + 3 to equal 5', () => {
-    expect(sum(2, 3)).toBe(5);
-})
+describe('Native null function:', () => {
+    test('Check null', () => {
+        expect(nativeNull()).toBe(null);
+        expect(nativeNull()).toBeNull();
+        expect(nativeNull()).toBeFalsy(); // undefined, null, 0, ''
+        expect(nativeNull()).toBeDefined();
+        expect(nativeNull()).not.toBeTruthy();
+        expect(nativeNull()).not.toBeUndefined();
+    });
+});
