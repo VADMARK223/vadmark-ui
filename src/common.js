@@ -1,7 +1,8 @@
 /**
  * @author Markitanov Vadim
- * @since 20.01.2023
+ * @since 21.01.2023
  */
+
 const nativeNull = () => null;
 
 /**

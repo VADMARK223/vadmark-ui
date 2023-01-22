@@ -3,7 +3,7 @@
  * @since 20.01.2023
  */
 
-const {getSum, nativeNull} = require('../index');
+const {getSum, nativeNull} = require('../src/common');
 
 describe('Sum function:', () => {
     test('1 + 2 = 3', () => {
