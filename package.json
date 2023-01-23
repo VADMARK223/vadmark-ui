@@ -1,6 +1,6 @@
 {
   "name": "vadmark-ui",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Vadmark user interface for React.",
   "keywords": [
     "ui"
@@ -12,10 +12,15 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": ["dist", "README.md", "index.js", "index.d.ts"],
+  "files": [
+    "dist",
+    "README.md",
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "rd /s /q dist && babel src/lib --out-dir dist --copy-files",
+    "build": "rd /s /q dist && cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "jest",
     "test-with-coverage": "jest --coverage"
   },
@@ -31,6 +36,7 @@
     "@testing-library/user-event": "^14.4.3",
     "babel-core": "^6.26.3",
     "babel-jest": "^29.3.1",
+    "cross-env": "^7.0.3",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
     "react": "^18.2.0",

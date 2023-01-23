@@ -3,6 +3,9 @@
  * @since 21.01.2023
  */
 import {useEffect, useState} from "react";
+import {Button} from "./lib";
+// import {Button} from "./lib";
+import './App.css';
 
 const App = (props) => {
     const [data, setData] = useState(null);
@@ -27,6 +30,7 @@ const App = (props) => {
             <h1>Hello world</h1>
             <button data-testid={'toggle-button-id'} onClick={handlerClick}>Click me</button>
             <input data-testid={'input-id'} type={'text'} placeholder={'input value..'} onChange={e=>setValue(e.target.value)}/>
+            <Button label={'asdasd'}/>
         </div>
     )
 }
