@@ -4,21 +4,20 @@
  */
 import {useEffect, useState} from "react";
 import {Button} from "./lib";
-// import {Button} from "./lib";
-import './App.css';
+import './styles/scss/style.scss';
 
 const App = (props) => {
     const [data, setData] = useState(null);
     const [toggle, setToggle] = useState(false);
     const [value, setValue] = useState('');
 
-    useEffect(()=> {
-        setTimeout(()=>{
+    useEffect(() => {
+        setTimeout(() => {
             setData({});
         }, 100);
     }, []);
 
-    const handlerClick = ()=> {
+    const handlerClick = () => {
         setToggle(!toggle);
     }
 
@@ -29,8 +28,19 @@ const App = (props) => {
             {data && <div>Data</div>}
             <h1>Hello world</h1>
             <button data-testid={'toggle-button-id'} onClick={handlerClick}>Click me</button>
-            <input data-testid={'input-id'} type={'text'} placeholder={'input value..'} onChange={e=>setValue(e.target.value)}/>
-            <Button label={'asdasd'}/>
+            <input data-testid={'input-id'} type={'text'} placeholder={'input value..'}
+                   onChange={e => setValue(e.target.value)}/>
+            <br/>
+            <Button text={'Vadmark button with click handler'} color={'blue'} onClick={() => {
+                console.log('Click.');
+            }}/>
+            <br/>
+            <Button text={'Vadmark button'}/>
+            <br/>
+            <Button text={'Закрыть окно'}/>
+
+            <br/>
+            <Button text={'Заблокированная кнопка'} color={'disabled'}/>
         </div>
     )
 }

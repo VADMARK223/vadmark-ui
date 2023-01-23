@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'gost';
+  src: url("../fonts/GOSTUI2.eot");
+  src: url("../fonts/GOSTUI2.eot") format('embedded-opentype'),
+		url("../fonts/GOSTUI2.woff") format('woff'),
+		url("../fonts/GOSTUI2.ttf") format('truetype'),
+		url("../fonts/GOSTUI2.svg#GOSTUI2") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gost-med';
+	src: url("../fonts/GOSTUI2-Medium.eot");
+	src: url("../fonts/GOSTUI2-Medium.eot") format('embedded-opentype'),
+	url("../fonts/GOSTUI2-Medium.woff") format('woff'),
+	url("../fonts/GOSTUI2-Medium.ttf") format('truetype'),
+	url("../fonts/GOSTUI2-Medium.svg#GOSTUI2-Medium") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gost-bold';
+	src: url("../fonts/GOSTUI2-Bold.eot");
+	src: url("../fonts/GOSTUI2-Bold.eot") format('embedded-opentype'),
+	url("../fonts/GOSTUI2-Bold.woff") format('woff'),
+	url("../fonts/GOSTUI2-Bold.ttf") format('truetype'),
+	url("../fonts/GOSTUI2-Bold.svg#GOSTUI2-Bold") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

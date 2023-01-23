@@ -1,0 +1,50 @@
+@import "../fonts/fonts";
+
+$gost: 'gost';
+$gost-m: 'gost-med';
+$gost-b: 'gost-bold';
+$fonts: $gost, 'Arial', 'Tahoma', sans-serif;
+
+$col-gray-d: #3B4256;
+$col-yellow: #FEDA5A;
+
+$col-white: #fff;
+$col-blue: #4384C5;
+$col-blue-d: #3470B7;
+
+$col-bg: #F4F7FB;
+
+html {
+  font-family: $fonts;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $col-bg;
+  color: $col-gray-d;
+}
+
+// Кнопка
+.btn {
+  border: 1px solid transparent; // Скрываем рамку
+  display: inline-block;
+  cursor: pointer; // При наведении мышка меняет указатель
+  color: $col-gray-d; // Цвет текста
+  background: $col-yellow; // Цвет заливки фона
+  border-radius: .25em; // Закругление границы
+  padding: 1vh;
+  user-select: none; // Запрещаем пользователю выделять текст кнопки
+
+  // Синяя кнопка
+  &._blue {
+    color: $col-white; // Цвет текста
+    background: $col-blue; // Цвет заливки фона
+    &:hover {
+      background: $col-blue-d; // Цвет заливки фона при наведении мышки
+    }
+  }
+}
