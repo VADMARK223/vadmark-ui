@@ -1,6 +1,6 @@
 {
   "name": "vadmark-ui",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "Vadmark user interface for React.",
   "keywords": [
     "ui"
@@ -9,7 +9,10 @@
     "type": "git",
     "url": "https://github.com/VADMARK223/vadmark-ui"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": ["dist", "README.md", "index.js", "index.d.ts"],
   "scripts": {
     "start": "react-scripts start",
     "build": "rd /s /q dist && babel src/lib --out-dir dist --copy-files",
