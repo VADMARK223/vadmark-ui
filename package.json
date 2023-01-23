@@ -12,7 +12,8 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "jest"
+    "test": "jest",
+    "test-with-coverage": "jest --coverage"
   },
   "author": "Markitanov Vadim",
   "license": "ISC",

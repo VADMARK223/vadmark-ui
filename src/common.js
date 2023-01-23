@@ -2,7 +2,6 @@
  * @author Markitanov Vadim
  * @since 21.01.2023
  */
-
 const nativeNull = () => null;
 
 /**
@@ -13,6 +12,12 @@ const nativeNull = () => null;
  */
 const getSum = (a, b) => {
     return a + b;
+}
+
+const tempFunction = () => {
+    console.log('Temp function');
+    console.log('Temp function1');
+    console.log('Temp function2');
 }
 
 module.exports = {

@@ -5,7 +5,6 @@
 import {useEffect, useState} from "react";
 
 const App = (props) => {
-    console.log('AAAAAAAAAPPPP');
     const [data, setData] = useState(null);
     const [toggle, setToggle] = useState(false);
     const [value, setValue] = useState('');

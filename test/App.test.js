@@ -5,22 +5,21 @@
 import {render, screen, fireEvent} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from "../src/App";
-import '@testing-library/jest-dom';
+require('../setupTests');
 
 describe('App tests', () => {
     test('Basic test', () => {
-        // const component = renderer.create(<App/>);
+        const {getByText, getByRole, getByPlaceholderText} = render(<App/>);
 
-        render(<App/>);
-        const helloWorld = screen.getByText(/hello world/i);
-        const button = screen.getByRole('button');
-        const input = screen.getByPlaceholderText(/input value/i)
-
+        const helloWorld = getByText(/hello world/i);
         expect(helloWorld).toBeInTheDocument();
+
+        const button = getByRole('button');
         expect(button).toBeInTheDocument();
+
+        const input = getByPlaceholderText(/input value/i)
         expect(input).toBeInTheDocument();
         expect(input).toMatchSnapshot();
-        // screen.debug();
     });
 
     test('Basic test 2', () => {
