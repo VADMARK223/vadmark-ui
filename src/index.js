@@ -5,16 +5,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from "./App";
-import Button from "./Button";
 
 ReactDom.render(
     <React.StrictMode>
-        {/*<App/>*/}
-        <Button/>
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 )
-
-module.exports = {
-    Button
-}
